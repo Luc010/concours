@@ -31,9 +31,9 @@ exports.create = (req, res) => {
 
 // FETCH all Users
 exports.findAll = (req, res) => {
-    User.findAll({attributes: ['id', 'email']}).then(users => {
+    User.findAll({}).then(users => {
         // Send all Users to Client
-        res.render('index',{
+        res.render('index.ejs',{
             users : users
         });
     });

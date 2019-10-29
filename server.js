@@ -3,9 +3,6 @@ var expressLayouts = require('express-ejs-layouts');
 var app = express();
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
-app.set('view engine', 'ejs');
-// APPLY CSS
-app.use(expressLayouts);
 
 const db = require('./app/config/db.config.js');
 
