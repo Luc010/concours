@@ -1,55 +1,53 @@
+// Declaration utilisateur
 module.exports = (sequelize, Sequelize) => {
     const User = sequelize.define('user', {
         email: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         password: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         firstname: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         lastname: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         age: {
-            type: Sequelize.INTEGER
+            type: Sequelize.INTEGER(255)
         },
         address: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         street: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
-        streetNum: {
-            type: Sequelize.STRING
-        },
-        zipCode: {
-            type: Sequelize.STRING
+        zip: {
+            type: Sequelize.STRING(255)
         },
         city: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         country: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         gender: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
         phone: {
-            type: Sequelize.INTEGER
+            type: Sequelize.INTEGER(255)
         },
-        socialNum: {
-            type: Sequelize.INTEGER
+        social_num: {
+            type: Sequelize.INTEGER(255)
         },
-        levelStudy: {
-            type: Sequelize.STRING
+        level: {
+            type: Sequelize.STRING(255)
         },
         bio: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(255)
         },
-        socialNetwork: {
-            type: Sequelize.STRING
+        social_network: {
+            type: Sequelize.STRING(255)
         }
     });
     return User;
