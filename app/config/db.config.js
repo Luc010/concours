@@ -1,3 +1,4 @@
+// Creation's model (user)
 const env = require('./env.js');
  
 const Sequelize = require('sequelize');

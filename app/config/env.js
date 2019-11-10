@@ -1,3 +1,4 @@
+// Environnement (BDD access)
 const env = {
     database: 'concours_db',
     username: 'root',
